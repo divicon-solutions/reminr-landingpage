@@ -8,13 +8,6 @@ import PasswordReset from "../components/others/PasswordReset";
 import ThankYou from "../components/others/ThankYou";
 import Login from "../pages/Login";
 import HomeOne from "../themes/index-1/HomeOne";
-import HomeTwo from "../themes/index-2/HomeTwo";
-import HomeThree from "../themes/index-3/HomeThree";
-import HomeFour from "../themes/index-4/HomeFour";
-import HomeFive from "../themes/index-5/HomeFive";
-import HomeSix from "../themes/index-6/HomeSix";
-import HomeSeven from "../themes/index-7/HomeSeven";
-import HomeEight from "../themes/index-8/HomeEight";
 import OurTeam from "../pages/OurTeam";
 import TeamDetails from "../pages/TeamDetails";
 import Download from "../pages/Download";
@@ -33,13 +26,6 @@ const AppRoutes = () => {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomeOne />} />
-        {/* <Route path="/home-two" element={<HomeTwo />} />
-        <Route path="/home-three" element={<HomeThree />} />
-        <Route path="/home-four" element={<HomeFour />} />
-        <Route path="/home-five" element={<HomeFive />} />
-        <Route path="/home-six" element={<HomeSix />} />
-        <Route path="/home-seven" element={<HomeSeven />} />
-        <Route path="/home-eight" element={<HomeEight />} /> */}
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/team-details" element={<TeamDetails />} />
         <Route path="/thank-you" element={<ThankYou />} />

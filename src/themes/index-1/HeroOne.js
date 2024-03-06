@@ -7,10 +7,14 @@ const HeroOne = () => {
   return (
     <>
       <section
-        className="hero-section pt-100 background-img"
+        className="hero-section pt-100"
         style={{
           background:
-            "url('assets/img/app-hero-bg.jpg')no-repeat center center / cover",
+            "url('assets/img/background.jpg')no-repeat center center / cover",
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+          opacity: "0.9",
         }}
       >
         <div className="container">
@@ -18,67 +22,31 @@ const HeroOne = () => {
             <div className="col-md-7 col-lg-6">
               <div className="hero-content-left text-white">
                 <h1 className="text-white">
-                  <span>Brainstorming</span> for Desired Usability
+                  <span>RemINR</span>
                 </h1>
                 <p className="lead">
-                  Our design projects are fresh and simple and will benefit your
-                  business greatly. Learn more about our work!
+                  Your Remote Companion for INR monitoring and Smart Medication
+                  Reminders.
                 </p>
-                <form action="#" method="post" className="subscribe-form">
-                  <div className="d-flex align-items-center">
-                    <input
-                      type="text"
-                      className="form-control input"
-                      id="email"
-                      name="email"
-                      placeholder="info@yourdomain.com"
-                    />
-                    <input
-                      type="submit"
-                      className="button btn solid-btn"
-                      id="submit"
-                      value="Subscribe"
-                    />
-                  </div>
-                </form>
-
-                <div className="video-promo-content py-4 d-flex align-items-center">
-                  <Link
-                    to="#"
-                    className="popup-youtube video-play-icon-without-bip video-play-icon mr-3"
-                  >
-                    <span
-                      className="ti-control-play"
-                      onClick={() => setOpen(true)}
-                    ></span>
-                  </Link>{" "}
-                  Watch Video Overview
-                </div>
               </div>
-            </div>
-            <div className="col-md-5 col-lg-5">
-              <div className="hero-animation-img">
-                <img
-                  src="assets/img/app-product.png"
-                  alt="app"
-                  className="img-fluid"
-                />
+              <div className="d-flex">
+                <Link to="/download">
+                  <img
+                    src="assets/img/android-link.png"
+                    alt="google-play"
+                    style={{ height: "60px" }}
+                  />
+                </Link>
+                <Link to="/coming-soon">
+                  <img
+                    src="assets/img/ios-link.png"
+                    alt="app-store"
+                    style={{ height: "60px" }}
+                  />
+                </Link>
               </div>
             </div>
           </div>
-          <ModalVideo
-            channel="youtube"
-            isOpen={isOpen}
-            videoId="9No-FiEInLA"
-            onClose={() => setOpen(false)}
-          />
-        </div>
-        <div className="bottom-img-absolute">
-          <img
-            src="assets/img/hero-bg-shape-1.svg"
-            alt="wave shape"
-            className="img-fluid"
-          />
         </div>
       </section>
     </>

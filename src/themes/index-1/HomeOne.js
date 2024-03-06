@@ -21,7 +21,7 @@ import Screenshot from "../../components/screenshot/Screenshot";
 export default function HomeOne() {
   return (
     <Layout>
-      <Navbar darkBg />
+      <Navbar />
       <HeroOne />
       <Promo />
       <Features />
