@@ -61,12 +61,12 @@ const Navbar = ({ darkBg, classOption }) => {
             >
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <HashLink className="nav-link" smooth to="#services">
+                  <HashLink className="nav-link" smooth to="/#services">
                     Services
                   </HashLink>
                 </li>
                 <li className="nav-item">
-                  <HashLink className="nav-link" smooth to="#contact">
+                  <HashLink className="nav-link" smooth to="/#contact">
                     Contact
                   </HashLink>
                 </li>

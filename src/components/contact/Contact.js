@@ -66,20 +66,6 @@ export default function Contact({ bgColor }) {
                   <div className="col-sm-6 col-12">
                     <div className="form-group">
                       <input
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Enter email"
-                        required="required"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-sm-6 col-12">
-                    <div className="form-group">
-                      <input
                         type="text"
                         name="phone"
                         defaultValue=""
@@ -89,16 +75,17 @@ export default function Contact({ bgColor }) {
                       />
                     </div>
                   </div>
-                  <div className="col-sm-6 col-12">
+                </div>
+                <div className="row">
+                  <div className="col-sm-12 col-12">
                     <div className="form-group">
                       <input
-                        type="text"
-                        name="company"
-                        defaultValue=""
-                        size="40"
+                        type="email"
                         className="form-control"
-                        id="company"
-                        placeholder="Your Company"
+                        name="email"
+                        id="email"
+                        placeholder="Enter email"
+                        required="required"
                       />
                     </div>
                   </div>

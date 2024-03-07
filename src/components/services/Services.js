@@ -2,10 +2,10 @@ import React from "react";
 import { GiMedicinePills } from "react-icons/gi";
 import { BiInjection } from "react-icons/bi";
 
-const Promo = () => {
+const Services = () => {
   return (
     <>
-      <section className="promo-section ptb-100">
+      <section id="services" className="promo-section ptb-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-7 col-md-8">
@@ -57,4 +57,4 @@ const Promo = () => {
   );
 };
 
-export default Promo;
+export default Services;
