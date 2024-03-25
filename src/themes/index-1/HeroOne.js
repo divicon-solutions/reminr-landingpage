@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const HeroOne = () => {
-  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <section
@@ -30,14 +28,14 @@ const HeroOne = () => {
                 </p>
               </div>
               <div className="d-flex">
-                <Link to="/download">
+                <Link to="/">
                   <img
                     src="assets/img/android-link.png"
                     alt="google-play"
                     style={{ height: "60px" }}
                   />
                 </Link>
-                <Link to="/coming-soon">
+                <Link to="/">
                   <img
                     src="assets/img/ios-link.png"
                     alt="app-store"

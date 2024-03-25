@@ -28,8 +28,7 @@ export default function Footer({ space }) {
                     }}
                   />
                   <p>
-                    Holisticly empower premium architectures without value-added
-                    ideas. Seamlessly evolve cross-platform experiences.
+                    Your Remote Companion for INR monitoring and Smart Medication Reminders.
                   </p>
                 </div>
               </div>
