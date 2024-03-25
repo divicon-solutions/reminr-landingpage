@@ -18,10 +18,15 @@ export default function Footer({ space }) {
               <div className="col-md-12 col-lg-4 mb-4 mb-md-4 mb-sm-4 mb-lg-0">
                 <div className="footer-nav-wrap text-white">
                   <img
-                    src="assets/img/logo-white-1x.png"
+                    src="assets/img/reminr-logo.png"
                     alt="footer logo"
                     width="120"
                     className="img-fluid mb-3"
+                    style={{
+                      borderRadius: "5px",
+                      backgroundColor: "#fff",
+                      padding: "5px",
+                    }}
                   />
                   <p>
                     Holisticly empower premium architectures without value-added
