@@ -22,27 +22,16 @@ const Navbar = ({ darkBg, classOption }) => {
     <>
       <header className={`header ${classOption}`}>
         <nav
-          className={`navbar navbar-expand-lg fixed-top ${
-            darkBg ? "bg-transparent" : "custom-nav white-bg"
-          } ${scroll > headerTop ? "affix" : ""}`}
+          className={`navbar navbar-expand-lg fixed-top custom-nav white-bg affix`}
         >
           <div className="container">
             <Link to="/" className="navbar-brand">
-              {darkBg ? (
-                <img
-                  src="assets/img/logo-white-1x.png"
-                  width="120"
-                  alt="logo"
-                  className="img-fluid"
-                />
-              ) : (
-                <img
-                  src="assets/img/logo-color-1x.png"
-                  width="120"
-                  alt="logo"
-                  className="img-fluid"
-                />
-              )}
+              <img
+                src="assets/img/reminr-logo.png"
+                width="120"
+                alt="logo"
+                className="img-fluid"
+              />
             </Link>
             <button
               className="navbar-toggler"
