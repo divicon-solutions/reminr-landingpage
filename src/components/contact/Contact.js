@@ -8,6 +8,11 @@ export default function Contact({ bgColor }) {
   const [message, setMessage] = useState("");
   const [captchaValue, setCaptchaValue] = useState("");
 
+  const checkValidEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailRegex.test(email);
+  };
+
   const onChange = (value) => {
     if (value) setCaptchaValue(value);
   };
@@ -16,6 +21,16 @@ export default function Contact({ bgColor }) {
     e.preventDefault();
     if (!captchaValue) {
       alert("Please verify captcha");
+      return;
+    }
+
+    if (!name) {
+      alert("Please enter name");
+      return;
+    }
+
+    if (checkValidEmail(email) === false) {
+      alert("Please enter valid email");
       return;
     }
 
