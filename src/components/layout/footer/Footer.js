@@ -5,9 +5,8 @@ export default function Footer({ space }) {
     <>
       <footer className="footer-section">
         <div
-          className={`footer-top background-img-2 ${
-            space ? "pt-150" : "pt-60"
-          }`}
+          className={`footer-top background-img-2 ${space ? "pt-150" : "pt-60"
+            }`}
           style={{
             background:
               "url('assets/img/footer-bg.png') no-repeat center top / cover",
@@ -29,8 +28,7 @@ export default function Footer({ space }) {
                     }}
                   />
                   <p>
-                    Holisticly empower premium architectures without value-added
-                    ideas. Seamlessly evolve cross-platform experiences.
+                    Your Remote Companion for INR monitoring and Smart Medication Reminders.
                   </p>
                 </div>
               </div>
@@ -56,7 +54,7 @@ export default function Footer({ space }) {
                         </a>
                       </li>
                       <li className="list-inline-item">
-                        <a className="small-text" href="#/">
+                        <a className="small-text" href="/privacy-policy">
                           Privacy Policy
                         </a>
                       </li>
