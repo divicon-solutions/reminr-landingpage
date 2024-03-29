@@ -22,7 +22,7 @@ jobs:
         run: |
           echo "${{ secrets.PROD_ENV }}" > .env
       - name: Build app
-        run: npm run build
+        run: CI=false npm run build
       - name: Create .firebaserc file
         uses: jsdaniell/create-json@v1.2.1
         with:
