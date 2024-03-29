@@ -44,7 +44,7 @@ export default function Contact({ bgColor }) {
       isResolved: false,
     };
 
-    fetch(`${process.env.REACT_APP_API_URL}/api/v1/contact-request`, {
+    fetch(`${process.env.REACT_APP_API_URL}/v1/contact-request`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
