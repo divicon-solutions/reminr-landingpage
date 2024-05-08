@@ -27,7 +27,7 @@ const HeroOne = () => {
                   Reminders.
                 </p>
               </div>
-              <div className="d-flex">
+              {/* <div className="d-flex">
                 <Link to="/">
                   <img
                     src="assets/img/android-link.png"
@@ -42,7 +42,7 @@ const HeroOne = () => {
                     style={{ height: "60px" }}
                   />
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

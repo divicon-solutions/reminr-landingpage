@@ -25,9 +25,9 @@ const Services = () => {
                 </div>
                 <h5>Home INR Monitoring</h5>
                 <p>
-                  Our app offers convenient home INR monitoring, allowing you to
-                  check your INR levels from the comfort of your home. Say
-                  goodbye to frequent visits to the clinic and hello to
+                  Our service offers convenient home INR monitoring, allowing
+                  you to check your INR levels from the comfort of your home.
+                  Say goodbye to frequent visits to the clinic and hello to
                   hassle-free monitoring
                 </p>
               </div>
@@ -42,11 +42,11 @@ const Services = () => {
                 <h5>Medications Management</h5>
                 <p>
                   Managing your medications can be challenging, but with our
-                  app, it's easier than ever. Keep track of your medications,
-                  set reminders, and ensure you never miss a dose again. Our app
-                  helps you stay on top of your health with ease, including
-                  options for phone call reminders to ensure you never miss a
-                  dose.
+                  service, it's easier than ever. Keep track of your
+                  medications, set reminders, and ensure you never miss a dose
+                  again. Our service helps you stay on top of your health with
+                  ease, including options for phone call reminders to ensure you
+                  never miss a dose.
                 </p>
               </div>
             </div>
