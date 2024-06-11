@@ -7,6 +7,8 @@ export default function Contact({ bgColor }) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [captchaValue, setCaptchaValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [formKey, setFormKey] = useState(0);
 
   const checkValidEmail = (email) => {
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -19,18 +21,22 @@ export default function Contact({ bgColor }) {
 
   const submitForm = (e) => {
     e.preventDefault();
+    setIsLoading(true);
     if (!captchaValue) {
       alert("Please verify captcha");
+      setIsLoading(false);
       return;
     }
 
     if (!name) {
       alert("Please enter name");
+      setIsLoading(false);
       return;
     }
 
     if (checkValidEmail(email) === false) {
       alert("Please enter valid email");
+      setIsLoading(false);
       return;
     }
 
@@ -53,11 +59,6 @@ export default function Contact({ bgColor }) {
     })
       .then((data) => {
         if (data.statusCode !== 200) {
-          setName("");
-          setPhone("");
-          setEmail("");
-          setMessage("");
-          setCaptchaValue("");
           alert("Message sent successfully");
         } else {
           alert("Error sending message, please try again");
@@ -66,6 +67,15 @@ export default function Contact({ bgColor }) {
       .catch((error) => {
         console.error("Error:", error);
         alert("Error sending message, please try again");
+      })
+      .finally(() => {
+        setName("");
+        setPhone("");
+        setEmail("");
+        setMessage("");
+        setCaptchaValue("");
+        setIsLoading(false);
+        setFormKey(prevKey => prevKey + 1);
       });
   };
 
@@ -111,6 +121,7 @@ export default function Contact({ bgColor }) {
             <div className="col-md-7">
               <form
                 id="contactForm"
+                key={formKey}
                 className="contact-us-form"
                 onSubmit={submitForm}
               >
@@ -182,13 +193,25 @@ export default function Contact({ bgColor }) {
                 </div>
                 <div className="row">
                   <div className="col-sm-12 mt-3">
-                    <button
-                      type="submit"
-                      className="btn solid-btn"
-                      id="btnContactUs"
-                    >
-                      Send Message
-                    </button>
+                    {isLoading ? (
+                      <button
+                        type="submit"
+                        className="btn solid-btn"
+                        id="btnContactUs"
+                        disabled
+                      >
+                        <span
+                          className="spinner-border spinner-border-sm"
+                          role="status"
+                          aria-hidden="true"
+                        ></span>
+                        Sending...
+                      </button>
+                    ) : (
+                      <button type="submit" className="btn solid-btn" id="btnContactUs">
+                        Send Message
+                      </button>
+                    )}
                   </div>
                 </div>
               </form>
